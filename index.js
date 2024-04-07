@@ -2,7 +2,7 @@ const express = require("express");
 const products = require("./products.json")
 const app = express();
 
-app.get("/" , (req, res) => {
+app.get("/products" , (req, res) => {
     res.send(products);
 })
 
